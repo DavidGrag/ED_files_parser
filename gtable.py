@@ -1,8 +1,5 @@
 import pygsheets
-import config  # remove this!
 
-# spreadsheetid = 'your_spreadsheet_id'
-# service_file = 'path_to_your_service_json_file.json'
 
 """
 1. How to get spreadsheet id
@@ -16,8 +13,8 @@ Search in Google "Creation of service account google API for google sheets"
 
 def fill_sheet(sheet_name, data):
     """Fills google spreadsheet with files main data"""
-    gc = pygsheets.authorize(service_file=config.service_file)
-    sh = gc.open_by_key(config.test)
+    gc = pygsheets.authorize(service_file='path_to_your_service_json_file.json')
+    sh = gc.open_by_key('your_spreadsheet_id')
     try:
         sh.add_worksheet(sheet_name)
     except Exception as ex:
