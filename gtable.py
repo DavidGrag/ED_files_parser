@@ -14,6 +14,7 @@ def fill_sheet(sheet_name, data):
     """Fills google spreadsheet with files main data"""
     gc = pygsheets.authorize(service_file='path_to_your_service_json_file.json')
     sh = gc.open_by_key('your_spreadsheet_id')
+    
     try:
         sh.add_worksheet(sheet_name)
     except Exception as ex:
