@@ -1,6 +1,5 @@
 import pygsheets
 
-
 """
 1. How to get spreadsheet id
 link example=>docs.google.com/spreadsheets/d/1txa5dHdG3Yv7kVIwgp1ZLAqNasdwdgsOXUtq5JkVERgrtsdgfxs/edit#gid=2623593171
@@ -20,7 +19,7 @@ def fill_sheet(sheet_name, data):
     except Exception as ex:
         print('Sheet exists!')
         print(ex)
-        pass
+
     wks_write = sh.worksheet_by_title(sheet_name)
     wks_write.clear('A1', None, '*')
     wks_write.set_dataframe(data, (1, 1), encoding='utf-8', fit=True)
