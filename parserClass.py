@@ -31,6 +31,7 @@ class Parser:
         return pages
 
     def parsing(self, show_info=False):
+        '''Main method. If show_info is True, prints in console information about progress.'''
         while self.__page <= self.__pages:
             if show_info:
                 self.__show_info()
