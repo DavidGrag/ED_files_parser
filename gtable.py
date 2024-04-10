@@ -2,7 +2,7 @@ import pygsheets
 
 """
 1. How to get spreadsheet id
-link example=>docs.google.com/spreadsheets/d/1txa5dHdG3Yv7kVIwgp1ZLAqNasdwdgsOXUtq5JkVERgrtsdgfxs/edit#gid=2623593171
+link example ==> docs.google.com/spreadsheets/d/1txa5dHdG3Yv7kVIwgp1ZLAqNasdwdgsOXUtq5JkVERgrtsdgfxs/edit#gid=2623593171
 copy the part of the link between /d/ and /
 in this case it is ==> 1txa5dHdG3Yv7kVIwgp1ZLAqNasdwdgsOXUtq5JkVERgrtsdgfxs
 2. How to get service file
